@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PalmCamel</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <style>
+      .hero {
+        background: url("https://source.unsplash.com/1600x900/?nature")
+          no-repeat center center;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        animation: fadeIn 2s;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        animation: slideInDown 2s;
+      }
+
+      .hero p {
+        animation: fadeInUp 2s;
+      }
+
+      .section {
+        padding: 60px 0;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideInDown {
+        from {
+          transform: translateY(-50px);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">PalmCamel</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <img src="img/palm.png" class="img-fluid" alt="Palm Trees" />
+          </div>
+          <div
+            class="col-md-6 d-flex flex-column justify-content-center text-black"
+          >
+            <h1 class="mb-3">Hi, Cameler's</h1>
+            <p>
+              This website is created for the purposes of Google Analytics to
+              analyze and improve the user experience. The data collected will
+              help us understand how visitors interact with our site.
+            </p>
+            <a
+              href="#about"
+              class="btn btn-primary btn-sm rounded-pill w-auto mt-3"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-light">
+      <div class="container">
+        <div class="about-content">
+          <h1 class="mb-4">About PalmCamel: Our Philosophy</h1>
+          <p>
+            At PalmCamel, we believe in the perfect harmony between resilience
+            and growth. Just like the palm tree, which stands tall and adapts to
+            its environment, we are committed to evolving and thriving amidst
+            changing landscapes. And much like the camel, known for its strength
+            and endurance across long journeys, we aim to carry forward our
+            vision with steadfast dedication. Our philosophy is rooted in the
+            balance of innovation and tradition, ensuring that we not only adapt
+            to the future but also remain true to our core values. At PalmCamel,
+            every step forward is a commitment to resilience, growth, and a
+            sustainable future.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vision and Mission Section -->
+    <section class="vision-mission section bg-light">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col">
+            <h2 class="mb-4">Our Vision & Mission</h2>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Vision Content Box -->
+          <div class="col-md-6">
+            <div class="content-box">
+              <div class="content-title">Our Vision</div>
+              <p class="content-text">
+                To inspire a deeper connection with nature through authentic and
+                engaging content.
+              </p>
+            </div>
+          </div>
+          <!-- Mission Content Box -->
+          <div class="col-md-6">
+            <div class="content-box">
+              <div class="content-title">Our Mission</div>
+              <p class="content-text">
+                To inspire and educate our community through authentic content
+                that fosters a deeper appreciation for the natural world.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2 class="mb-4">Connect with Us</h2>
+            <p>Follow us on our social media platforms to stay updated!</p>
+            <div class="d-flex justify-content-center gap-4">
+              <!-- Instagram -->
+              <a
+                href="https://www.instagram.com/yu.maill"
+                target="_blank"
+                class="text-decoration-none"
+              >
+                <img
+                  src="https://img.icons8.com/color/48/000000/instagram-new.png"
+                  alt="Instagram"
+                  class="social-icon"
+                />
+              </a>
+              <!-- Facebook -->
+              <a
+                href="https://www.facebook.com/sentrabuahbatu?mibextid=LQQJ4d"
+                target="_blank"
+                class="text-decoration-none"
+              >
+                <img
+                  src="https://img.icons8.com/color/48/000000/facebook-new.png"
+                  alt="Facebook"
+                  class="social-icon"
+                />
+              </a>
+              <!-- WhatsApp -->
+              <a
+                href="https://wa.me/0881023758612"
+                target="_blank"
+                class="text-decoration-none"
+              >
+                <img
+                  src="https://img.icons8.com/color/48/000000/whatsapp.png"
+                  alt="WhatsApp"
+                  class="social-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2024 My Landing Page. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
